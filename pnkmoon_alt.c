@@ -18,7 +18,7 @@ void print_full_table( int year[], int day[], int time[], char **dow, int n )
 	for ( i = 0; i < n; i++ ) {
 		int hh = time[ i ] / 100;
 		int mm = time[ i ] - hh * 100;
-		printf( "%d.  %s, April %2d, %d at %2.2d:%2.2d.\n", i+1, dow[ i ], day[ i ], year[ i ], hh, mm );
+		printf( "%2d.  %s, April %2d, %d at %2.2d:%2.2d.\n", i+1, dow[ i ], day[ i ], year[ i ], hh, mm );
 	}
 
 	return;
